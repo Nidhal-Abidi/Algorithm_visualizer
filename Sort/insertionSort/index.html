@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <!-- Importing library( highlish.js ) to show code nicely -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- End of import -->
+    <title>Insertion Sort</title>
+  </head>
+  <body>
+    <div class="error"></div>
+    <div class="container">
+      <div class="toppane">
+        <!-- Input Section -->
+        <form action="#">
+          <div class="input-values">
+            <label for="arr-input">Array values </label>
+            <input type="text" name="arr-input" id="arr-input" />
+          </div>
+
+          <div class="animation-control">
+            <button type="submit" class="btn1">Begin Animation</button>
+            <!-- <button class="btn2 not-working" disabled>Pause/Resume</button> -->
+          </div>
+        </form>
+      </div>
+      <div class="leftpane">
+        <!-- Animation Section -->
+        <h1>Animation Section</h1>
+        <div class="animation-result"></div>
+        <canvas id="canvas" width="1000" height="700"></canvas>
+      </div>
+      <div class="rightpane">
+        <!-- Code section -->
+        <h1>Code Section</h1>
+        <pre>
+          
+  
+  <code>def insertionSort(arr):
+  for i in range(1, len(arr)):
+    key = arr[i]
+    j = i-1
+    #swap(arr[j+1] & arr[j]) until we reach 
+    #the correct position
+    while j >=0 and key < arr[j] :
+      arr[j+1] = arr[j]
+      j -= 1
+    arr[j+1] = key
+</code></pre>
+      </div>
+    </div>
+  </body>
+</html>

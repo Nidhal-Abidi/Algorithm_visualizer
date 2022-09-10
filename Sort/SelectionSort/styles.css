@@ -1,0 +1,125 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.leftpane {
+  width: 60%;
+  height: 85%;
+  float: left;
+  background-color: rgb(225, 176, 176);
+  border-collapse: collapse;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightpane {
+  width: 40%;
+  height: 85%;
+  position: relative;
+  float: right;
+  background-color: rgb(226, 226, 164);
+  border-collapse: collapse;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toppane {
+  width: 100%;
+  height: 15%;
+  border-collapse: collapse;
+  background-color: #b5d9fd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-values {
+  width: 60%;
+  position: relative;
+  float: left;
+  justify-content: center;
+}
+
+.animation-control {
+  width: 30%;
+  position: relative;
+  float: right;
+}
+
+.btn1,
+.btn2 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+}
+
+label {
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 12px 20px;
+}
+
+input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.not-working {
+  background-color: grey;
+  cursor: default;
+}
+
+/* Css for the code  */
+code {
+  font-size: 23px;
+}
+
+.executing {
+  background-color: grey;
+}
+
+/* Animation CSS */
+#canvas {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
